@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xrt-tw-KHe">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--News Details View Controller-->
+        <scene sceneID="wem-Bk-mrk">
+            <objects>
+                <viewController storyboardIdentifier="NewsDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xrt-tw-KHe" customClass="NewsDetailsViewController" customModule="NewsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="miv-l4-AAa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vTJ-lo-RWw">
+                                <rect key="frame" x="0.0" y="44" width="414" height="922"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B8s-mH-FtV">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="851"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nhz-wS-2HF">
+                                                <rect key="frame" x="10" y="10" width="394" height="300"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="300" id="4Fo-ho-oQi"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" systemColor="systemGray6Color"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYF-Dh-7rr">
+                                                <rect key="frame" x="10" y="328" width="394" height="23"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cbl-VN-cdP">
+                                                <rect key="frame" x="7" y="359.5" width="50" height="49"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="7hf-V8-N6t"/>
+                                                    <constraint firstAttribute="width" constant="50" id="XaH-UQ-Tbq"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shimaa khairy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6P7-Rg-muR">
+                                                <rect key="frame" x="65" y="373.5" width="106.5" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15/7/2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymE-Ko-Vap">
+                                                <rect key="frame" x="334" y="374.5" width="70" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gD3-Oh-Jlh">
+                                                <rect key="frame" x="10" y="419" width="394" height="163.5"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </string>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                                <color key="textColor" systemColor="systemGrayColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jd6-7K-qVL">
+                                                <rect key="frame" x="10" y="597.5" width="394" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Irl-JJ-9fE">
+                                                <rect key="frame" x="10" y="626.5" width="394" height="163.5"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </string>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                                <color key="textColor" systemColor="systemGrayColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Source:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHj-OM-FWs">
+                                                <rect key="frame" x="10" y="800" width="58.5" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOl-Ec-c9N">
+                                                <rect key="frame" x="78.5" y="795.5" width="106" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="jOa-yf-Le7"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                <inset key="contentEdgeInsets" minX="3" minY="0.0" maxX="3" maxY="0.0"/>
+                                                <state key="normal" title="Go to source">
+                                                    <color key="titleColor" systemColor="linkColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="openSource:" destination="xrt-tw-KHe" eventType="touchUpInside" id="ow9-GX-It7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <constraints>
+                                            <constraint firstItem="gD3-Oh-Jlh" firstAttribute="top" secondItem="cbl-VN-cdP" secondAttribute="bottom" constant="10" id="2Q9-Rn-Hzh"/>
+                                            <constraint firstItem="jd6-7K-qVL" firstAttribute="trailing" secondItem="gD3-Oh-Jlh" secondAttribute="trailing" id="3mk-fQ-2Rc"/>
+                                            <constraint firstItem="NYF-Dh-7rr" firstAttribute="leading" secondItem="nhz-wS-2HF" secondAttribute="leading" id="6Ir-ch-ZUW"/>
+                                            <constraint firstItem="6P7-Rg-muR" firstAttribute="leading" secondItem="cbl-VN-cdP" secondAttribute="trailing" constant="8" id="6MX-Ce-IXu"/>
+                                            <constraint firstItem="Irl-JJ-9fE" firstAttribute="leading" secondItem="nhz-wS-2HF" secondAttribute="leading" id="8sq-5c-Ftq"/>
+                                            <constraint firstItem="Irl-JJ-9fE" firstAttribute="top" secondItem="jd6-7K-qVL" secondAttribute="bottom" constant="8" id="CgF-am-TR4"/>
+                                            <constraint firstItem="ymE-Ko-Vap" firstAttribute="centerY" secondItem="cbl-VN-cdP" secondAttribute="centerY" id="DaZ-rf-e4Q"/>
+                                            <constraint firstItem="iOl-Ec-c9N" firstAttribute="leading" secondItem="zHj-OM-FWs" secondAttribute="trailing" constant="10" id="Dkp-7D-Qpp"/>
+                                            <constraint firstItem="nhz-wS-2HF" firstAttribute="leading" secondItem="B8s-mH-FtV" secondAttribute="leading" constant="10" id="EYy-Fm-PYZ"/>
+                                            <constraint firstItem="NYF-Dh-7rr" firstAttribute="top" secondItem="nhz-wS-2HF" secondAttribute="bottom" constant="18" id="GAP-MD-Bq4"/>
+                                            <constraint firstItem="cbl-VN-cdP" firstAttribute="leading" secondItem="NYF-Dh-7rr" secondAttribute="leading" constant="-3" id="GnT-Wn-eeZ"/>
+                                            <constraint firstItem="iOl-Ec-c9N" firstAttribute="centerY" secondItem="zHj-OM-FWs" secondAttribute="centerY" id="H6f-66-Fhj"/>
+                                            <constraint firstItem="jd6-7K-qVL" firstAttribute="leading" secondItem="gD3-Oh-Jlh" secondAttribute="leading" id="IGy-Fz-OQh"/>
+                                            <constraint firstItem="zHj-OM-FWs" firstAttribute="leading" secondItem="nhz-wS-2HF" secondAttribute="leading" id="KC6-jm-M2Q"/>
+                                            <constraint firstItem="gD3-Oh-Jlh" firstAttribute="trailing" secondItem="nhz-wS-2HF" secondAttribute="trailing" id="LFP-Yr-Nv4"/>
+                                            <constraint firstItem="jd6-7K-qVL" firstAttribute="top" secondItem="gD3-Oh-Jlh" secondAttribute="bottom" constant="15" id="Y5y-p2-2Ky"/>
+                                            <constraint firstAttribute="height" priority="250" constant="900" id="Zw2-cE-APH"/>
+                                            <constraint firstItem="zHj-OM-FWs" firstAttribute="top" secondItem="Irl-JJ-9fE" secondAttribute="bottom" constant="10" id="dO3-XW-QIC"/>
+                                            <constraint firstItem="cbl-VN-cdP" firstAttribute="top" secondItem="NYF-Dh-7rr" secondAttribute="bottom" constant="8" id="f0d-eV-33Q"/>
+                                            <constraint firstAttribute="trailing" secondItem="nhz-wS-2HF" secondAttribute="trailing" constant="10" id="fbv-52-0GX"/>
+                                            <constraint firstItem="6P7-Rg-muR" firstAttribute="centerY" secondItem="cbl-VN-cdP" secondAttribute="centerY" id="h64-SH-GFp"/>
+                                            <constraint firstItem="nhz-wS-2HF" firstAttribute="top" secondItem="B8s-mH-FtV" secondAttribute="top" constant="10" id="non-hZ-2bb"/>
+                                            <constraint firstItem="gD3-Oh-Jlh" firstAttribute="leading" secondItem="nhz-wS-2HF" secondAttribute="leading" id="sCb-x0-ouY"/>
+                                            <constraint firstItem="ymE-Ko-Vap" firstAttribute="trailing" secondItem="nhz-wS-2HF" secondAttribute="trailing" id="sfD-ZC-ybg"/>
+                                            <constraint firstItem="NYF-Dh-7rr" firstAttribute="trailing" secondItem="nhz-wS-2HF" secondAttribute="trailing" id="uRS-nX-Hp7"/>
+                                            <constraint firstItem="Irl-JJ-9fE" firstAttribute="trailing" secondItem="nhz-wS-2HF" secondAttribute="trailing" id="uYy-RB-cSm"/>
+                                            <constraint firstAttribute="bottom" secondItem="zHj-OM-FWs" secondAttribute="bottom" constant="30" id="vkG-M2-zwR"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="B8s-mH-FtV" firstAttribute="trailing" secondItem="asT-0N-i0M" secondAttribute="trailing" id="95d-AM-FJ9"/>
+                                    <constraint firstItem="B8s-mH-FtV" firstAttribute="top" secondItem="asT-0N-i0M" secondAttribute="top" id="WNP-gg-kog"/>
+                                    <constraint firstItem="B8s-mH-FtV" firstAttribute="width" secondItem="p00-PG-PSj" secondAttribute="width" id="X6N-o1-f7s"/>
+                                    <constraint firstItem="B8s-mH-FtV" firstAttribute="leading" secondItem="asT-0N-i0M" secondAttribute="leading" id="sNJ-Iw-5dy"/>
+                                    <constraint firstItem="B8s-mH-FtV" firstAttribute="bottom" secondItem="asT-0N-i0M" secondAttribute="bottom" id="yWm-J2-KdH"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="asT-0N-i0M"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="p00-PG-PSj"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jmY-MX-QCc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vTJ-lo-RWw" firstAttribute="trailing" secondItem="jmY-MX-QCc" secondAttribute="trailing" id="39F-va-mxf"/>
+                            <constraint firstItem="vTJ-lo-RWw" firstAttribute="leading" secondItem="jmY-MX-QCc" secondAttribute="leading" id="7Yt-lS-ljI"/>
+                            <constraint firstItem="vTJ-lo-RWw" firstAttribute="bottom" secondItem="jmY-MX-QCc" secondAttribute="bottom" id="bSr-BB-bof"/>
+                            <constraint firstItem="vTJ-lo-RWw" firstAttribute="top" secondItem="jmY-MX-QCc" secondAttribute="top" id="eOZ-pq-S4y"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="1000"/>
+                    <connections>
+                        <outlet property="author" destination="6P7-Rg-muR" id="uQ8-oB-RL8"/>
+                        <outlet property="date" destination="ymE-Ko-Vap" id="YXc-G2-Bma"/>
+                        <outlet property="image" destination="nhz-wS-2HF" id="ssW-BH-lag"/>
+                        <outlet property="newsContent" destination="Irl-JJ-9fE" id="Cth-lR-KCi"/>
+                        <outlet property="newsDescription" destination="gD3-Oh-Jlh" id="kWi-SX-Kxl"/>
+                        <outlet property="newsTitle" destination="NYF-Dh-7rr" id="lMY-t8-IHc"/>
+                        <outlet property="sourceButton" destination="iOl-Ec-c9N" id="zOl-bU-OaJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rmf-3T-daK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="289.85507246376812" y="46.875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -11,8 +11,9 @@ import Alamofire
 var from = "2021-07-17"
 var sortBy = "publishedAt"
 var apiKey = "2914fcb5d1604ac8a9eb6b15d0e29160"
+var language = "en"
 enum NewsNetworking {
-    case search(search: String)
+    case search(search: String,page :Int)
 }
 extension NewsNetworking :TargetType{
     
@@ -36,12 +37,15 @@ extension NewsNetworking :TargetType{
     }
     var task: Task {
         switch self {
-        case .search(search: let search):
+        case .search(search: let search, page: let page):
             return .requestParameters(parameters:
                 ["q" : search,
                  "from" : from,
                  "sortBy" : sortBy,
-                 "apiKey" : apiKey], encoding:URLEncoding.default)
+                 "apiKey" : apiKey,
+                 "language" : language,
+                 "pageSize":20,
+                 "page":page], encoding:URLEncoding.default)
         }
     }
 

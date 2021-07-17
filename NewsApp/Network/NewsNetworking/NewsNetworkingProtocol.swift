@@ -7,11 +7,11 @@
 
 import Foundation
 protocol NewsNetworkingProtocol{
-    func searchNews(search:String,completion : @escaping(Result<NewsResponse?,NSError>)->Void )
+    func searchNews(search:String,page:Int,completion : @escaping(Result<NewsResponse?,NSError>)->Void )
 }
 class NewsNetworkingApi : BaseAPI<NewsNetworking> ,NewsNetworkingProtocol{
-    func searchNews(search: String, completion: @escaping (Result<NewsResponse?, NSError>) -> Void) {
-        fetchData(target: .search(search: search), responseClass: NewsResponse.self) { (result) in
+    func searchNews(search: String,page:Int, completion: @escaping (Result<NewsResponse?, NSError>) -> Void) {
+        fetchData(target: .search(search: search,page:page), responseClass: NewsResponse.self) { (result) in
             completion(result)
         }
     }
